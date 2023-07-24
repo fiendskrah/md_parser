@@ -1,17 +1,23 @@
 # md_parser.sh
 
-This bash script parses the headers of a markdown file and creates a new file for every header found. It also dumps all content under that header into the file. This script was written for use with [Obsidian](https://obsidian.md/). Using this, I propogate my MOC file containing brief information about academic journals into a web view in Obsidian's graph view. 
+This bash script parses the headers of a markdown file and creates a new file for every header found. It also dumps all content under that header into the file. This script was written for use with [Obsidian](https://obsidian.md/). Using this, I propagate my MOC file containing brief information about academic journals into a web view in Obsidian's [graph view](https://help.obsidian.md/Plugins/Graph+view). 
 
 ![before](images/before.png)
 ![after](images/after.png)
 
-The script only works on level 1 headers with asterisks on either side of the name, like so:
+the script will parse level 1 headers and will only recognize headers with asterisks on either side of the name, like so:
 
 
 ```
 # *Geographical Analysis* 
 
 ~content~
+
+# *American Education Research Journal*
+
+~content~
+
+etc.
 
 ```
 
